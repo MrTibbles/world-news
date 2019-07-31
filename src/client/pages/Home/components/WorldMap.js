@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { styled } from "linaria/react";
 
 const SVG = styled.svg`
@@ -252,5 +253,9 @@ const WorldMap = ({ onContinentSelected }) => (
     </g>
   </SVG>
 );
+
+WorldMap.propTypes = {
+  onContinentSelected: PropTypes.func.isRequired
+};
 
 export default WorldMap;
