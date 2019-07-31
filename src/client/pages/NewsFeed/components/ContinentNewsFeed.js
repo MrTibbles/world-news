@@ -42,15 +42,16 @@ const ContinentNewsFeed = ({ items }) => {
           <h3>{item.title}</h3>
           <ShareButtons>
             <EmailShareButton
+              body={`Link to article: ${item.link}`}
               subject={`Hey read this article on: ${item.title}`}
-              url={window.location.href}
+              url={item.link}
             >
               <EmailIcon round={true} size={22} />
             </EmailShareButton>
-            <FacebookShareButton quote={item.title} url={window.location.href}>
+            <FacebookShareButton quote={item.title} url={item.link}>
               <FacebookIcon round={true} size={22} />
             </FacebookShareButton>
-            <TwitterShareButton title={item.title} url={window.location.href}>
+            <TwitterShareButton title={item.title} url={item.link}>
               <TwitterIcon round={true} size={22} />
             </TwitterShareButton>
           </ShareButtons>
