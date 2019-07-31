@@ -27,7 +27,11 @@ const NewsFeed = ({ match }) => {
 
   return (
     <React.Fragment>
-      <h1>{continent}</h1>
+      <h1 className="capitalize">{continent}</h1>
+      {networkState.error ? (
+        <h1>Sorry, something went wrong getting the news 🤷‍♀️</h1>
+      ) : null}
+      {networkState.loading ? <Components.Loading /> : null}
       {networkState.data ? (
         <React.Fragment>
           <Components.SearchInformation
