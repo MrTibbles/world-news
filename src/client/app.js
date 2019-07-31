@@ -13,6 +13,7 @@ const App = () => (
     <MainContentArea>
       <Switch>
         <Route component={Pages.Home} exact path="/" />
+        <Route component={Pages.NewsFeed} exact path="/news-feed/:continent" />
       </Switch>
     </MainContentArea>
   </Router>
