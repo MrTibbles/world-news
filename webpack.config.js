@@ -67,7 +67,8 @@ module.exports = (env = {}) => {
     },
     plugins: [
       new webpack.DefinePlugin({
-        PRODUCTION_ENV: !isInDev
+        PRODUCTION_ENV: !isInDev,
+        GOOGLE_API: JSON.stringify('https://www.googleapis.com/customsearch/v1?key=AIzaSyC7kBqeS0nh6Ejo_aFs_rI1PecfOwawclk&cx=004399504627790727017:nc67yhqclkg&')
       }),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
