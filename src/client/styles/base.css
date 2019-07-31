@@ -51,3 +51,7 @@ button:disabled {
   cursor: auto;
   background-color: var(--color-disabled);
 }
+
+div {
+  padding: 20px;
+}
