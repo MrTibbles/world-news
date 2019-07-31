@@ -1,0 +1,620 @@
+{
+    "kind": "customsearch#search",
+    "url": {
+        "type": "application/json",
+        "template": "https://www.googleapis.com/customsearch/v1?q={searchTerms}&num={count?}&start={startIndex?}&lr={language?}&safe={safe?}&cx={cx?}&sort={sort?}&filter={filter?}&gl={gl?}&cr={cr?}&googlehost={googleHost?}&c2coff={disableCnTwTranslation?}&hq={hq?}&hl={hl?}&siteSearch={siteSearch?}&siteSearchFilter={siteSearchFilter?}&exactTerms={exactTerms?}&excludeTerms={excludeTerms?}&linkSite={linkSite?}&orTerms={orTerms?}&relatedSite={relatedSite?}&dateRestrict={dateRestrict?}&lowRange={lowRange?}&highRange={highRange?}&searchType={searchType}&fileType={fileType?}&rights={rights?}&imgSize={imgSize?}&imgType={imgType?}&imgColorType={imgColorType?}&imgDominantColor={imgDominantColor?}&alt=json"
+    },
+    "queries": {
+        "request": [
+            {
+                "title": "Google Custom Search - america",
+                "totalResults": "4360000",
+                "searchTerms": "america",
+                "count": 10,
+                "startIndex": 1,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "004399504627790727017:nc67yhqclkg"
+            }
+        ],
+        "nextPage": [
+            {
+                "title": "Google Custom Search - america",
+                "totalResults": "4360000",
+                "searchTerms": "america",
+                "count": 10,
+                "startIndex": 11,
+                "inputEncoding": "utf8",
+                "outputEncoding": "utf8",
+                "safe": "off",
+                "cx": "004399504627790727017:nc67yhqclkg"
+            }
+        ]
+    },
+    "context": {
+        "title": "image-search"
+    },
+    "searchInformation": {
+        "searchTime": 0.509068,
+        "formattedSearchTime": "0.51",
+        "totalResults": "4360000",
+        "formattedTotalResults": "4,360,000"
+    },
+    "items": [
+        {
+            "kind": "customsearch#result",
+            "title": "Latin America & Caribbean - BBC News",
+            "htmlTitle": "Latin <b>America</b> &amp; Caribbean - BBC News",
+            "link": "https://www.bbc.com/news/world/latin_america",
+            "displayLink": "www.bbc.com",
+            "snippet": "The Brazil jail where 57 people died in a gang fight was overcrowded and \nunderstaffed, a report says. 16h16 hours ago; Latin America & Caribbean ...",
+            "htmlSnippet": "The Brazil jail where 57 people died in a gang fight was overcrowded and <br>\nunderstaffed, a report says. 16h16 hours ago; Latin <b>America</b> &amp; Caribbean&nbsp;...",
+            "formattedUrl": "https://www.bbc.com/news/world/latin_america",
+            "htmlFormattedUrl": "https://www.bbc.com/news/world/latin_<b>america</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTci4iZWnnJwADVgtU2-OKQapnOe9u0DRLuhVVolGKS6tSXatkpkInkcwvR"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "msapplication-tilecolor": "#bb1919",
+                        "theme-color": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "msapplication-tileimage": "//m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/1.2.0/windows-eight-icon-144x144.png",
+                        "application-name": "BBC News",
+                        "og:type": "website",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "og:image": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCNews",
+                        "twitter:creator": "@BBCNews",
+                        "twitter:image:src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "twitter:image:alt": "BBC News",
+                        "twitter:domain": "www.bbc.co.uk",
+                        "fb:admins": "100004154058350",
+                        "og:title": "Latin America & Caribbean News - BBC News",
+                        "og:description": "BBC News - Latin America & Caribbean",
+                        "article:section": "Latin America & Caribbean",
+                        "og:url": "http://www.bbc.co.uk/news/world/latin_america",
+                        "twitter:title": "Latin America & Caribbean News - BBC News",
+                        "twitter:description": "BBC News - Latin America & Caribbean"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "US & Canada - BBC News",
+            "htmlTitle": "US &amp; Canada - BBC News",
+            "link": "https://www.bbc.com/news/world/us_and_canada",
+            "displayLink": "www.bbc.com",
+            "snippet": "The party's most liberal candidates running for the presidency came under attack \nin the Detroit debate. 7m7 minutes ago; US & Canada ...",
+            "htmlSnippet": "The party&#39;s most liberal candidates running for the presidency came under attack <br>\nin the Detroit debate. 7m7 minutes ago; US &amp; Canada&nbsp;...",
+            "formattedUrl": "https://www.bbc.com/news/world/us_and_canada",
+            "htmlFormattedUrl": "https://www.bbc.com/news/world/us_and_canada",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTci4iZWnnJwADVgtU2-OKQapnOe9u0DRLuhVVolGKS6tSXatkpkInkcwvR"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "msapplication-tilecolor": "#bb1919",
+                        "theme-color": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "msapplication-tileimage": "//m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/1.2.0/windows-eight-icon-144x144.png",
+                        "application-name": "BBC News",
+                        "og:type": "website",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "og:image": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCNews",
+                        "twitter:creator": "@BBCNews",
+                        "twitter:image:src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "twitter:image:alt": "BBC News",
+                        "twitter:domain": "www.bbc.co.uk",
+                        "fb:admins": "100004154058350",
+                        "og:title": "US & Canada News - BBC News",
+                        "og:description": "BBC News - US & Canada",
+                        "article:section": "US & Canada",
+                        "og:url": "http://www.bbc.co.uk/news/world/us_and_canada",
+                        "twitter:title": "US & Canada News - BBC News",
+                        "twitter:description": "BBC News - US & Canada"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Mexico hail: Ice 1.5m thick carpets Guadalajara - BBC News",
+            "htmlTitle": "Mexico hail: Ice 1.5m thick carpets Guadalajara - BBC News",
+            "link": "https://www.bbc.com/news/world-latin-america-48821306",
+            "displayLink": "www.bbc.com",
+            "snippet": "Jul 1, 2019 ... Six suburbs in the Mexican city of Guadalajara were carpeted in a thick layer of \nice after a heavy hailstorm. The ice was up to 1.5m (5ft) thick in ...",
+            "htmlSnippet": "Jul 1, 2019 <b>...</b> Six suburbs in the Mexican city of Guadalajara were carpeted in a thick layer of <br>\nice after a heavy hailstorm. The ice was up to 1.5m (5ft) thick in&nbsp;...",
+            "cacheId": "LFAYFdFrC58J",
+            "formattedUrl": "https://www.bbc.com/news/world-latin-america-48821306",
+            "htmlFormattedUrl": "https://www.bbc.com/news/world-latin-<b>america</b>-48821306",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwOc-yaqDwzuIbhf_sDqMlcGfLHx4fzHe2aeX8DHCsEzzywKTk4ICI3lCt"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "x-country": "us",
+                        "x-audience": "US",
+                        "cps_audience": "US",
+                        "cps_changequeueid": "142659367",
+                        "og:title": "Ice 1.5m thick as Mexican city hit by freak hail",
+                        "og:type": "article",
+                        "og:description": "Streets are carpeted in ice which traps vehicles and damages homes in Guadalajara.",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "article:section": "Latin America & Caribbean",
+                        "og:url": "https://www.bbc.com/news/world-latin-america-48821306",
+                        "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/5023/production/_107651502_729d858f-d996-40af-9243-4d3590d96e54.jpg",
+                        "og:image:alt": "BBC News. Aftermath of freak hailstorm in Mexico's Guadalajara, 1 July 2019",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCWorld",
+                        "twitter:title": "Ice 1.5m thick as Mexican city hit by freak hail",
+                        "twitter:description": "Streets are carpeted in ice which traps vehicles and damages homes in Guadalajara.",
+                        "twitter:creator": "@BBCWorld",
+                        "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/5023/production/_107651502_729d858f-d996-40af-9243-4d3590d96e54.jpg",
+                        "twitter:image:alt": "Aftermath of freak hailstorm in Mexico's Guadalajara, 1 July 2019",
+                        "twitter:domain": "www.bbc.com",
+                        "apple-itunes-app": "app-id=364147881, app-argument=https://www.bbc.com/news/world-latin-america-48821306?utm_medium=banner&utm_content=apple-itunes-app",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "application-name": "BBC News",
+                        "msapplication-tileimage": "BBC News",
+                        "msapplication-tilecolor": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "theme-color": "#bb1919",
+                        "fb:app_id": "1609039196070050",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/news/976/cpsprodpb/5023/production/_107651502_729d858f-d996-40af-9243-4d3590d96e54.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "The tiny flats taking over Latin America - BBC Worklife",
+            "htmlTitle": "The tiny flats taking over Latin <b>America</b> - BBC Worklife",
+            "link": "https://www.bbc.com/worklife/article/20190703-the-tiny-flats-taking-over-latin-america",
+            "displayLink": "www.bbc.com",
+            "snippet": "Jul 3, 2019 ... \"They are the smallest in Latin America,\" says Alexandre Frankel, executive \ndirector of Vitaco, the firm behind a micro-apartment project in São ...",
+            "htmlSnippet": "Jul 3, 2019 <b>...</b> &quot;They are the smallest in Latin <b>America</b>,&quot; says Alexandre Frankel, executive <br>\ndirector of Vitaco, the firm behind a micro-apartment project in São&nbsp;...",
+            "cacheId": "3YlqFlHWODAJ",
+            "formattedUrl": "https://www.bbc.com/.../20190703-the-tiny-flats-taking-over-latin-america",
+            "htmlFormattedUrl": "https://www.bbc.com/.../20190703-the-tiny-flats-taking-over-latin-<b>america</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9I2sunWHKEc1MN6d_XQkLdc946YIwRSCU4cGk5bYLzYizFmai4Idb0WU"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1",
+                        "author": "Cecilia Barría",
+                        "og:title": "The tiny flats taking over Latin America",
+                        "og:type": "article",
+                        "og:url": "https://www.bbc.com/worklife/article/20190703-the-tiny-flats-taking-over-latin-america",
+                        "og:description": "From urban overcrowding to skyrocketing housing prices, some architects are turning to ultra-small accommodations – but are they practical, or prison-like?",
+                        "og:author": "Cecilia Barría",
+                        "og:image": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/7f/xr/p07fxrqj.jpg",
+                        "og:image:width": "624",
+                        "og:image:height": "351",
+                        "fb:pages": "133536249999517",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBC_Worklife",
+                        "twitter:title": "The tiny flats taking over Latin America",
+                        "twitter:description": "From urban overcrowding to skyrocketing housing prices, some architects are turning to ultra-small accommodations – but are they practical, or prison-like?",
+                        "twitter:image": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/7f/xr/p07fxrqj.jpg",
+                        "fb:admins": "100004154058350",
+                        "apple-mobile-web-app-title": "BBC Worklife",
+                        "application-name": "BBC Worklife",
+                        "msapplication-tilecolor": "#2d89ef",
+                        "msapplication-config": "/worklife/assets/worklife/browserconfig.xml",
+                        "theme-color": "#ffffff"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/7f/xr/p07fxrqj.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "How America overthrew Guatemala's reformist president - BBC News",
+            "htmlTitle": "How <b>America</b> overthrew Guatemala&#39;s reformist president - BBC News",
+            "link": "https://www.bbc.com/news/av/stories-48638209/how-america-overthrew-guatemala-s-reformist-president",
+            "displayLink": "www.bbc.com",
+            "snippet": "Jun 19, 2019 ... In June 1954 President Jacobo Arbenz of Guatemala became the first Latin \nAmerican leader overthrown in a coup organised by the US ...",
+            "htmlSnippet": "Jun 19, 2019 <b>...</b> In June 1954 President Jacobo Arbenz of Guatemala became the first Latin <br>\nAmerican leader overthrown in a coup organised by the US&nbsp;...",
+            "cacheId": "xoYW-UiHo_4J",
+            "formattedUrl": "https://www.bbc.com/.../how-america-overthrew-guatemala-s-reformist- president",
+            "htmlFormattedUrl": "https://www.bbc.com/.../how-<b>america</b>-overthrew-guatemala-s-reformist- president",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQY5y-VUafN_seXE4Xm98Vi85H1vE52Qc6NiewWGM6RrAnJAlcQL3vaCDSW"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "x-country": "us",
+                        "x-audience": "US",
+                        "cps_audience": "US",
+                        "cps_changequeueid": "142024392",
+                        "og:title": "The CIA's first Latin American coup",
+                        "og:type": "website",
+                        "og:description": "Accused of being a communist, Guatemala's president was toppled in a US-led coup",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "article:section": "Stories",
+                        "og:url": "https://www.bbc.com/news/av/stories-48638209/how-america-overthrew-guatemala-s-reformist-president",
+                        "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/15F83/production/_107378998_p07d48n1.jpg",
+                        "og:image:alt": "BBC News. Soldiers point gun at an effigy of the president",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "player",
+                        "twitter:site": "@BBCWorld",
+                        "twitter:title": "The CIA's first Latin American coup",
+                        "twitter:description": "Accused of being a communist, Guatemala's president was toppled in a US-led coup",
+                        "twitter:creator": "@BBCWorld",
+                        "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/15F83/production/_107378998_p07d48n1.jpg",
+                        "twitter:image:alt": "Soldiers point gun at an effigy of the president",
+                        "twitter:domain": "www.bbc.com",
+                        "twitter:player": "https://ssl.bbc.co.uk/wwscripts/embed_player#playlist=/news/av/stories-48638209/how-america-overthrew-guatemala-s-reformist-presidentA&poster=https://c.files.bbci.co.uk/15F83/production/_107378998_p07d48n1.jpg&ad_site=/news/stories&ad_keyword=&source=twitter",
+                        "twitter:player:height": "360",
+                        "twitter:player:width": "640",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "application-name": "BBC News",
+                        "msapplication-tileimage": "BBC News",
+                        "msapplication-tilecolor": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "fb:app_id": "1609039196070050",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/news/1024/branded_news/15F83/production/_107378998_p07d48n1.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Fox v MSNBC: How the news divides America - BBC News",
+            "htmlTitle": "Fox v MSNBC: How the news divides <b>America</b> - BBC News",
+            "link": "https://www.bbc.com/news/av/world-us-canada-44944081/fox-v-msnbc-how-the-news-divides-america",
+            "displayLink": "www.bbc.com",
+            "snippet": "Jul 26, 2018 ... Mark is devoted to Fox News. Polly is a loyal viewer of MSNBC. Their viewing \nhabits reflect a deeply polarised nation and shape how they see ...",
+            "htmlSnippet": "Jul 26, 2018 <b>...</b> Mark is devoted to Fox News. Polly is a loyal viewer of MSNBC. Their viewing <br>\nhabits reflect a deeply polarised nation and shape how they see&nbsp;...",
+            "cacheId": "FFOIrAHhMpsJ",
+            "formattedUrl": "https://www.bbc.com/.../fox-v-msnbc-how-the-news-divides-america",
+            "htmlFormattedUrl": "https://www.bbc.com/.../fox-v-msnbc-how-the-news-divides-<b>america</b>",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC2Vst8alZZ6fLNOiS2c-DMEC-GRrRLDj_nBUy4gyzn8WtHpL6Cs6jTgnt"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "x-country": "us",
+                        "x-audience": "US",
+                        "cps_audience": "US",
+                        "cps_changequeueid": "127670213",
+                        "og:title": "Fox v MSNBC: How the news divides America",
+                        "og:type": "website",
+                        "og:description": "Mark and Polly's viewing habits reflect a deeply polarised nation and shape how they see the world.",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "article:section": "US & Canada",
+                        "og:url": "https://www.bbc.com/news/av/world-us-canada-44944081/fox-v-msnbc-how-the-news-divides-america",
+                        "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/AF3C/production/_102706844_p06fswc3.jpg",
+                        "og:image:alt": "BBC News. Mark and Polly",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "player",
+                        "twitter:site": "@BBCWorld",
+                        "twitter:title": "Fox v MSNBC: How the news divides America",
+                        "twitter:description": "Mark and Polly's viewing habits reflect a deeply polarised nation and shape how they see the world.",
+                        "twitter:creator": "@BBCWorld",
+                        "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/AF3C/production/_102706844_p06fswc3.jpg",
+                        "twitter:image:alt": "Mark and Polly",
+                        "twitter:domain": "www.bbc.com",
+                        "twitter:player": "https://ssl.bbc.co.uk/wwscripts/embed_player#playlist=/news/av/world-us-canada-44944081/fox-v-msnbc-how-the-news-divides-americaA&poster=https://c.files.bbci.co.uk/AF3C/production/_102706844_p06fswc3.jpg&ad_site=/news/world/us_and_canada&ad_keyword=comvid&source=twitter",
+                        "twitter:player:height": "360",
+                        "twitter:player:width": "640",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "application-name": "BBC News",
+                        "msapplication-tileimage": "BBC News",
+                        "msapplication-tilecolor": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "fb:app_id": "1609039196070050",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/news/1024/branded_news/AF3C/production/_102706844_p06fswc3.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "America colonisation 'cooled Earth's climate' - BBC News",
+            "htmlTitle": "<b>America</b> colonisation &#39;cooled Earth&#39;s climate&#39; - BBC News",
+            "link": "https://www.bbc.com/news/science-environment-47063973",
+            "displayLink": "www.bbc.com",
+            "snippet": "Jan 31, 2019 ... Colonisation of the Americas at the end of the 15th Century killed so many \npeople, it disturbed Earth's climate. That's the conclusion of scientists ...",
+            "htmlSnippet": "Jan 31, 2019 <b>...</b> Colonisation of the <b>Americas</b> at the end of the 15th Century killed so many <br>\npeople, it disturbed Earth&#39;s climate. That&#39;s the conclusion of scientists&nbsp;...",
+            "cacheId": "SWHQ8M61YcEJ",
+            "formattedUrl": "https://www.bbc.com/news/science-environment-47063973",
+            "htmlFormattedUrl": "https://www.bbc.com/news/science-environment-47063973",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSny6OTTGfJ6T6D2ZVlPhuZ8O28UB57A1TSFtOr1xtBIjbxEKTmLAlP6ud"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "x-country": "us",
+                        "x-audience": "US",
+                        "cps_audience": "US",
+                        "cps_changequeueid": "135133471",
+                        "og:title": "America colonisation ‘cooled climate’",
+                        "og:type": "article",
+                        "og:description": "European settlement of the Americas killed so many people, it disturbed Earth's climate.",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "article:section": "Science & Environment",
+                        "og:url": "https://www.bbc.com/news/science-environment-47063973",
+                        "og:image": "https://ichef.bbci.co.uk/images/ic/1024x576/p06zjwpc.jpg",
+                        "og:image:alt": "BBC News. Columbus statue",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCWorld",
+                        "twitter:title": "America colonisation ‘cooled climate’",
+                        "twitter:description": "European settlement of the Americas killed so many people, it disturbed Earth's climate.",
+                        "twitter:creator": "@BBCWorld",
+                        "twitter:image:src": "https://ichef.bbci.co.uk/images/ic/1024x576/p06zjwpc.jpg",
+                        "twitter:image:alt": "Columbus statue",
+                        "twitter:domain": "www.bbc.com",
+                        "apple-itunes-app": "app-id=364147881, app-argument=https://www.bbc.com/news/science-environment-47063973?utm_medium=banner&utm_content=apple-itunes-app",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "application-name": "BBC News",
+                        "msapplication-tileimage": "BBC News",
+                        "msapplication-tilecolor": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "theme-color": "#bb1919",
+                        "fb:app_id": "1609039196070050",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/images/ic/1024x576/p06zjwpc.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Dismay after Trump moves to cut aid to Central America - BBC News",
+            "htmlTitle": "Dismay after Trump moves to cut aid to Central <b>America</b> - BBC News",
+            "link": "https://www.bbc.com/news/world-us-canada-47764237",
+            "displayLink": "www.bbc.com",
+            "snippet": "Mar 31, 2019 ... The US president wants to cut aid to El Salvador, Guatemala and Honduras in \norder to stem migration.",
+            "htmlSnippet": "Mar 31, 2019 <b>...</b> The US president wants to cut aid to El Salvador, Guatemala and Honduras in <br>\norder to stem migration.",
+            "cacheId": "lsiR2i5E93gJ",
+            "formattedUrl": "https://www.bbc.com/news/world-us-canada-47764237",
+            "htmlFormattedUrl": "https://www.bbc.com/news/world-us-canada-47764237",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZvR_PQa1yaxJmkE6y1fyRXXYWrVh7eQ51NtbYTU9YHo6Z9rWShpcLuN0y"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "x-country": "us",
+                        "x-audience": "US",
+                        "cps_audience": "US",
+                        "cps_changequeueid": "138002787",
+                        "og:title": "Dismay over Trump Central America aid cut",
+                        "og:type": "article",
+                        "og:description": "The US president wants to cut aid to El Salvador, Guatemala and Honduras in order to stem migration.",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "article:section": "US & Canada",
+                        "og:url": "https://www.bbc.com/news/world-us-canada-47764237",
+                        "og:image": "https://ichef.bbci.co.uk/news/1024/branded_news/09F0/production/_106244520_mediaitem106244518.jpg",
+                        "og:image:alt": "BBC News. Migrants from Honduras walk in the river as they try to cross the Rio Bravo towards the United States, as seen from Piedras Negras, Mexico, February 16, 2019",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCWorld",
+                        "twitter:title": "Dismay over Trump Central America aid cut",
+                        "twitter:description": "The US president wants to cut aid to El Salvador, Guatemala and Honduras in order to stem migration.",
+                        "twitter:creator": "@BBCWorld",
+                        "twitter:image:src": "https://ichef.bbci.co.uk/news/1024/branded_news/09F0/production/_106244520_mediaitem106244518.jpg",
+                        "twitter:image:alt": "Migrants from Honduras walk in the river as they try to cross the Rio Bravo towards the United States, as seen from Piedras Negras, Mexico, February 16, 2019",
+                        "twitter:domain": "www.bbc.com",
+                        "apple-itunes-app": "app-id=364147881, app-argument=https://www.bbc.com/news/world-us-canada-47764237?utm_medium=banner&utm_content=apple-itunes-app",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "application-name": "BBC News",
+                        "msapplication-tileimage": "BBC News",
+                        "msapplication-tilecolor": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "theme-color": "#bb1919",
+                        "fb:app_id": "1609039196070050",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/news/1024/branded_news/09F0/production/_106244520_mediaitem106244518.jpg"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Ask America - Your voices, your stories - BBC News",
+            "htmlTitle": "Ask <b>America</b> - Your voices, your stories - BBC News",
+            "link": "https://www.bbc.com/news/world-us-canada-44928743",
+            "displayLink": "www.bbc.com",
+            "snippet": "Ask America hear from voters in a dozen US states about talking politics with ... \nAs the US mid-term elections near, Rajini Vaidyanathan takes a look at America's\n.",
+            "htmlSnippet": "Ask <b>America</b> hear from voters in a dozen US states about talking politics with ... <br>\nAs the US mid-term elections near, Rajini Vaidyanathan takes a look at <b>America&#39;s</b><br>\n.",
+            "formattedUrl": "https://www.bbc.com/news/world-us-canada-44928743",
+            "htmlFormattedUrl": "https://www.bbc.com/news/world-us-canada-44928743",
+            "pagemap": {
+                "cse_thumbnail": [
+                    {
+                        "width": "300",
+                        "height": "168",
+                        "src": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTci4iZWnnJwADVgtU2-OKQapnOe9u0DRLuhVVolGKS6tSXatkpkInkcwvR"
+                    }
+                ],
+                "metatags": [
+                    {
+                        "viewport": "width=device-width, initial-scale=1, user-scalable=1",
+                        "msapplication-tilecolor": "#bb1919",
+                        "theme-color": "#bb1919",
+                        "mobile-web-app-capable": "yes",
+                        "apple-mobile-web-app-title": "BBC News",
+                        "msapplication-tileimage": "//m.files.bbci.co.uk/modules/bbc-morph-news-waf-page-meta/1.2.0/windows-eight-icon-144x144.png",
+                        "application-name": "BBC News",
+                        "og:type": "website",
+                        "og:site_name": "BBC News",
+                        "og:locale": "en_GB",
+                        "article:author": "https://www.facebook.com/bbcnews",
+                        "og:image": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "fb:pages": "1143803202301544,317278538359186,1392506827668140,742734325867560,185246968166196,156060587793370,137920769558355,193435954068976,21263239760,156400551056385,929399697073756,154344434967,228735667216,80758950658,260212261199,294662213128,1086451581439054,283348121682053,295830058648,239931389545417,304314573046,310719525611571,647687225371774,1159932557403143,286567251709437,1731770190373618,125309456546,163571453661989,285361880228,512423982152360,238003846549831,176663550714,260967092113,118450564909230,100978706649892,15286229625,122103087870579,120655094632228,102814153147070,124715648647,153132638110668,150467675018739",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBCNews",
+                        "twitter:creator": "@BBCNews",
+                        "twitter:image:src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1",
+                        "twitter:image:alt": "BBC News",
+                        "twitter:domain": "www.bbc.co.uk",
+                        "fb:admins": "100004154058350",
+                        "og:title": "Ask America - Your voices, your stories News - BBC News",
+                        "og:description": "BBC News - Ask America - Your voices, your stories",
+                        "article:section": "Ask America - Your voices, your stories",
+                        "og:url": "http://www.bbc.co.uk/news/world-us-canada-44928743",
+                        "twitter:title": "Ask America - Your voices, your stories News - BBC News",
+                        "twitter:description": "BBC News - Ask America - Your voices, your stories"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "http://www.bbc.co.uk/news/special/2015/newsspec_10857/bbc_news_logo.png?cb=1"
+                    }
+                ]
+            }
+        },
+        {
+            "kind": "customsearch#result",
+            "title": "Travel - South America's other 'Easter Island' - BBC",
+            "htmlTitle": "Travel - South America's other 'Easter Island' - BBC",
+            "link": "http://www.bbc.com/travel/story/20181209-south-americas-other-easter-island",
+            "displayLink": "www.bbc.com",
+            "snippet": "Dec 10, 2018 ... South America's largest trove of religious monuments and megalithic sculptures \nisn't on Easter Island, nor even in Peru or Chile, as most ...",
+            "htmlSnippet": "Dec 10, 2018 <b>...</b> South <b>America&#39;s</b> largest trove of religious monuments and megalithic sculptures <br>\nisn&#39;t on Easter Island, nor even in Peru or Chile, as most&nbsp;...",
+            "cacheId": "gHQ2wN4qhgUJ",
+            "formattedUrl": "www.bbc.com/travel/.../20181209-south-americas-other-easter-island",
+            "htmlFormattedUrl": "www.bbc.com/travel/.../20181209-south-<b>americas</b>-other-easter-island",
+            "pagemap": {
+                "metatags": [
+                    {
+                        "author": "Christopher P Baker",
+                        "og:title": "South America’s other ‘Easter Island’",
+                        "og:type": "article",
+                        "og:url": "http://www.bbc.com/travel/story/20181209-south-americas-other-easter-island",
+                        "og:description": "The mysterious statues of San Agustín and underground tombs of Tierradentro, in southern Colombia, are finally rising from the dead after being off-limits for decades.",
+                        "fb:pages": "133536249999517",
+                        "twitter:card": "summary_large_image",
+                        "twitter:site": "@BBC_Travel",
+                        "twitter:title": "South America’s other ‘Easter Island’",
+                        "twitter:description": "The mysterious statues of San Agustín and underground tombs of Tierradentro, in southern Colombia, are finally rising from the dead after being off-limits for decades.",
+                        "og:author": "Christopher P Baker",
+                        "og:image": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/6t/vv/p06tvvz9.jpg",
+                        "og:image:width": "624",
+                        "og:image:height": "351",
+                        "twitter:image": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/6t/vv/p06tvvz9.jpg",
+                        "viewport": "width=device-width, initial-scale=1.0",
+                        "fb:admins": "100004154058350"
+                    }
+                ],
+                "cse_image": [
+                    {
+                        "src": "https://ichef.bbci.co.uk/wwfeatures/live/624_351/images/live/p0/6t/vv/p06tvvz9.jpg"
+                    }
+                ]
+            }
+        }
+    ]
+}
