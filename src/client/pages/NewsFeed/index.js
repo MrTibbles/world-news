@@ -2,15 +2,18 @@ import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import { Redirect } from "react-router-dom";
 
-import { useRESTAPI } from "../../services";
+import { useGraphQLAPI } from "../../services";
 import * as Components from "./components";
+import getNewsByContinentQuery from "./queries/getNewsByContinent";
 
 const NewsFeed = ({ match }) => {
   const { continent } = match.params;
-  const [networkState, submitQuery] = useRESTAPI(continent);
+  const [networkState, submitQuery] = useGraphQLAPI();
 
   const fetchNewsStoriesByContinent = useRef(() => {
-    submitQuery();
+    const query = getNewsByContinentQuery(continent);
+
+    submitQuery(query);
   });
 
   useEffect(() => {
@@ -21,6 +24,10 @@ const NewsFeed = ({ match }) => {
     return <Redirect to="/" />;
   }
 
+  const result = networkState.data
+    ? networkState.data.getNewsByContinent
+    : undefined;
+
   return (
     <React.Fragment>
       <h1 className="capitalize">{continent}</h1>
@@ -28,15 +35,13 @@ const NewsFeed = ({ match }) => {
         <h1>Sorry, something went wrong getting the news 🤷‍♀️</h1>
       ) : null}
       {networkState.loading ? <Components.Loading /> : null}
-      {networkState.data ? (
+      {result ? (
         <React.Fragment>
           <Components.SearchInformation
-            searchTime={networkState.data.searchInformation.formattedSearchTime}
-            totalResults={
-              networkState.data.searchInformation.formattedTotalResults
-            }
+            searchTime={result.searchInformation.formattedSearchTime}
+            totalResults={result.searchInformation.formattedTotalResults}
           />
-          <Components.ContinentNewsFeed items={networkState.data.items} />
+          <Components.ContinentNewsFeed items={result.items} />
         </React.Fragment>
       ) : null}
     </React.Fragment>

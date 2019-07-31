@@ -40,6 +40,7 @@ const ContinentNewsFeed = ({ items }) => {
       {newsStories.map((item, idx) => (
         <li key={idx}>
           <h3>{item.title}</h3>
+          <p>{item.snippet}</p>
           <ShareButtons>
             <EmailShareButton
               body={`Link to article: ${item.link}`}

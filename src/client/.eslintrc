@@ -1,7 +1,6 @@
 {
   extends: "@raddad/eslint-config/react-rules",
   globals: {
-    GOOGLE_API: false,
     PRODUCTION_ENV: false,
   },
   parser: "babel-eslint"
