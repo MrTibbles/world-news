@@ -2,7 +2,7 @@
   "name": "world-news",
   "version": "0.0.1",
   "description": "Simple app to view news in a given country",
-  "main": "src/server/server.js",
+  "main": "src/server/index.js",
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint:js && git add ."
@@ -12,6 +12,8 @@
     "#COMMENT": "FOR SOME REASON ESLINT IS NOT LIKING NESTED CONFIG FILES... INVESTIGATE WHEN HAVE TIME",
     "lint:js": "prettier --write \"src/**/*.js\" && eslint --fix \"src/client/*.js\" && eslint --fix \"src/server/*.js\"",
     "dev:client": "webpack-dev-server",
+    "dev:server": "node src/server/index.js",
+    "start:dev": "npm-run-all --parallel dev:*",
     "test": "npm t"
   },
   "engines": {
@@ -25,6 +27,9 @@
   "author": "@mrtibbles",
   "license": "MIT",
   "dependencies": {
+    "apollo-datasource-rest": "^0.6.1",
+    "apollo-server": "^2.8.1",
+    "graphql": "^14.4.2",
     "linaria": "^1.4.0-alpha.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
@@ -51,6 +56,7 @@
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.2",
     "mini-css-extract-plugin": "^0.8.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "webpack": "^4.38.0",
