@@ -24,7 +24,7 @@ const Navbar = styled.nav`
   }
 `;
 
-const MainContentArea = props => (
+const MainLayoutContainer = props => (
   <React.Fragment>
     <Navbar>
       <Link to="/">
@@ -35,8 +35,8 @@ const MainContentArea = props => (
   </React.Fragment>
 );
 
-MainContentArea.propTypes = {
+MainLayoutContainer.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default MainContentArea;
+export default MainLayoutContainer;

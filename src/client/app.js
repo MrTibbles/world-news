@@ -5,17 +5,17 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "normalize.css";
 import "./styles/base.css";
 
-import { MainContentArea } from "./layout";
+import { MainLayoutContainer } from "./layout";
 import * as Pages from "./pages";
 
 const App = () => (
   <Router>
-    <MainContentArea>
+    <MainLayoutContainer>
       <Switch>
         <Route component={Pages.Home} exact path="/" />
         <Route component={Pages.NewsFeed} exact path="/news-feed/:continent" />
       </Switch>
-    </MainContentArea>
+    </MainLayoutContainer>
   </Router>
 );
 
