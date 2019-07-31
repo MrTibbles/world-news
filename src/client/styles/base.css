@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+  font-weight: inherit;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+body,
+html {
+  --color-primary: #92232C;
+  --color-offwhite: #f7f7f7;
+  --color-dark: #1D1D1D;
+  --color-white: #ffffff;
+  --color-disabled: dimgrey;
+  --color-error: red;
+
+  --spacing-base: 1rem;
+  --spacing-double: 2rem;
+
+  --depth-base: 0;
+  --depth-layer1: 25;
+  --depth-layer2: 50;
+
+  font-size: 18px;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: normal;
+  background-color: var(--color-offwhite);
+}
+
+#app-root {
+  overflow: hidden;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: var(--color-white);
+}
+
+button {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: auto;
+  background-color: var(--color-disabled);
+}
