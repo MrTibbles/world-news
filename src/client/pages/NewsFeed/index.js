@@ -17,10 +17,6 @@ const NewsFeed = ({ match }) => {
     fetchNewsStoriesByContinent.current();
   }, []);
 
-  useEffect(() => {
-    if (networkState.data) console.info(networkState.data);
-  }, [networkState]);
-
   if (!match.params || !continent) {
     return <Redirect to="/" />;
   }
