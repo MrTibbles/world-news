@@ -13,7 +13,7 @@
 
 body,
 html {
-  --color-primary: #92232C;
+  --color-primary: lightpink;
   --color-offwhite: #f7f7f7;
   --color-dark: #1D1D1D;
   --color-white: #ffffff;
@@ -51,4 +51,8 @@ button {
 button:disabled {
   cursor: auto;
   background-color: var(--color-disabled);
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
