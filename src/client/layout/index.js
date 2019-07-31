@@ -1,1 +1,1 @@
-export { default as MainContentArea } from "./MainContentArea";
+export { default as MainLayoutContainer } from "./MainLayoutContainer";
