@@ -9,10 +9,6 @@ const List = styled.ul`
   li {
     padding: var(--spacing-base) 0;
     margin-bottom: var(--spacing-base);
-
-    &:hover {
-      box-shadow: 0 2px 16px var(--color-dark);
-    }
   }
 `;
 
