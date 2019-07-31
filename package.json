@@ -11,7 +11,7 @@
   "scripts": {
     "lint:js": "prettier --write \"src/**/*.js\" && eslint --fix \"src/**/*.js\"",
     "dev:client": "webpack-dev-server",
-    "test": "npm t",
+    "test": "npm t"
   },
   "engines": {
     "node": ">=10.0.0"
