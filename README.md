@@ -35,3 +35,15 @@ input NewsByContinentInput {
   continent: String! # 'north-america' | 'europe'
 }
 ```
+
+
+## Contributing ⚒
+### Requirements
+- node >= v10
+- npm
+
+### Running
+```bash
+$ npm i
+$ npm run start:dev
+```
