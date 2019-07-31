@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /**
- * Shared fetch util for TRN API
+ * Shared fetch util
 
  * @return {Array} [0]      Network state representation
  *                 [1]      Method for submitting network request

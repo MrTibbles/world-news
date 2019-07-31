@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Redirect } from "react-router-dom";
 
 import { useRESTAPI } from "../../services";
+import * as Components from "./components";
 
 const NewsFeed = ({ match }) => {
   const { continent } = match.params;
@@ -24,7 +25,22 @@ const NewsFeed = ({ match }) => {
     return <Redirect to="/" />;
   }
 
-  return <h1>{continent}</h1>;
+  return (
+    <React.Fragment>
+      <h1>{continent}</h1>
+      {networkState.data ? (
+        <React.Fragment>
+          <Components.SearchInformation
+            searchTime={networkState.data.searchInformation.formattedSearchTime}
+            totalResults={
+              networkState.data.searchInformation.formattedTotalResults
+            }
+          />
+          <Components.ContinentNewsFeed items={networkState.data.items} />
+        </React.Fragment>
+      ) : null}
+    </React.Fragment>
+  );
 };
 
 NewsFeed.propTypes = {
