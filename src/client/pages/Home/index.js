@@ -4,8 +4,6 @@ import * as Components from "./components";
 
 const HomePage = ({ history }) => {
   const onContinentSelected = useRef(continent => {
-    console.info(`continent: ${continent}`);
-
     return history.push(`/news-feed/${continent}`);
   });
 
