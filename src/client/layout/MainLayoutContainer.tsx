@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
+import * as PropTypes from "prop-types";
 import { styled } from "linaria/react";
 import WorldIcon from "../ui-icons/WorldIcon";
 import { Link } from "react-router-dom";
@@ -24,7 +24,11 @@ const Navbar = styled.nav`
   }
 `;
 
-const MainLayoutContainer = props => (
+interface MainLayoutContainerProps {
+  children: React.ReactNode
+}
+
+const MainLayoutContainer: React.SFC<MainLayoutContainerProps> = props => (
   <React.Fragment>
     <Navbar>
       <Link to="/">

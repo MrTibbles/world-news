@@ -17,6 +17,9 @@ module.exports = (env = {}) => {
     entry: path.resolve(PATHS.src, "app.js"),
     mode: isInDev ? "development" : "production",
     devtool: isInDev ? "eval" : "source-map",
+    resolve: {
+      extensions: [".ts", ".tsx", ".js", ".jsx"]
+    },
     devServer: {
       hot: true,
       historyApiFallback: true,
@@ -32,11 +35,11 @@ module.exports = (env = {}) => {
     module: {
       rules: [
         {
-          test: /\.js$/,
+          test: /\.(t|j)sx?$/,
           exclude: /node_modules/,
           use: [
             {
-              loader: "babel-loader"
+              loader: 'awesome-typescript-loader'
             },
             {
               loader: "linaria/loader",
@@ -44,8 +47,10 @@ module.exports = (env = {}) => {
                 sourceMap: isInDev
               }
             }
-          ]
+          ],
         },
+        // addition - add source-map support
+        { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
         {
           test: /\.css$/,
           use: [
