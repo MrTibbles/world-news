@@ -14,6 +14,7 @@ const App = () => (
       <Switch>
         <Route component={Pages.Home} exact path="/" />
         <Route component={Pages.NewsFeed} exact path="/news-feed/:continent" />
+        <Route render={() => <div>404</div>} />
       </Switch>
     </MainLayoutContainer>
   </Router>

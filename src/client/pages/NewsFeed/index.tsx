@@ -1,28 +1,25 @@
-import React, { useEffect, useRef } from "react";
-import PropTypes from "prop-types";
-import { Redirect } from "react-router-dom";
+import * as React from "react";
+import { RouteComponentProps } from "react-router-dom";
 
 import { useGraphQLAPI } from "../../services";
 import * as Components from "./components";
 import getNewsByContinentQuery from "./queries/getNewsByContinent";
 
-const NewsFeed = ({ match }) => {
+const NewsFeed: React.SFC<RouteComponentProps<{ continent: string }>> = ({
+  match
+}): JSX.Element => {
   const { continent } = match.params;
   const [networkState, submitQuery] = useGraphQLAPI();
 
-  const fetchNewsStoriesByContinent = useRef(() => {
+  const fetchNewsStoriesByContinent = React.useRef((): void => {
     const query = getNewsByContinentQuery(continent);
 
     submitQuery(query);
   });
 
-  useEffect(() => {
+  React.useEffect((): void => {
     fetchNewsStoriesByContinent.current();
   }, []);
-
-  if (!match.params || !continent) {
-    return <Redirect to="/" />;
-  }
 
   const result = networkState.data
     ? networkState.data.getNewsByContinent
@@ -46,10 +43,6 @@ const NewsFeed = ({ match }) => {
       ) : null}
     </React.Fragment>
   );
-};
-
-NewsFeed.propTypes = {
-  match: PropTypes.object.isRequired
 };
 
 export default NewsFeed;

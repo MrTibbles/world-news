@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { styled } from "linaria/react";
 
 import NewspaperIcon from "../../../ui-icons/NewspaperIcon";
@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 `;
 
-const Loading = () => (
+const Loading: React.SFC<{}> = (): JSX.Element => (
   <Container>
     <NewspaperIcon />
     <h2>Loading...</h2>
