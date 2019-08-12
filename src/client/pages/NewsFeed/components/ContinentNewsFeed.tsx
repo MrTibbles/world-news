@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
 import { styled } from "linaria/react";
 import {
   EmailShareButton,
@@ -31,13 +30,22 @@ const ShareButtons = styled.div`
   }
 `;
 
-const ContinentNewsFeed = ({ items }) => {
-  const [newsStories] = useState(items);
+interface Item {
+  title: string;
+  snippet: string;
+  link: string;
+}
 
-  return (
-    <List>
-      {/* REPLACE INDEX KEYS WITH IDS WHEN GQL IS IMPLEMENTED */}
-      {newsStories.map((item, idx) => (
+interface ContinentNewsFeedProps {
+  items: Item[];
+}
+
+const ContinentNewsFeed: React.SFC<ContinentNewsFeedProps> = ({
+  items
+}): JSX.Element => (
+  <List>
+    {items.map(
+      (item: Item, idx: number): JSX.Element => (
         <li key={idx}>
           <h3>{item.title}</h3>
           <p>{item.snippet}</p>
@@ -57,13 +65,9 @@ const ContinentNewsFeed = ({ items }) => {
             </TwitterShareButton>
           </ShareButtons>
         </li>
-      ))}
-    </List>
-  );
-};
-
-ContinentNewsFeed.propTypes = {
-  items: PropTypes.array.isRequired
-};
+      )
+    )}
+  </List>
+);
 
 export default ContinentNewsFeed;

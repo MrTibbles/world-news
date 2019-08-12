@@ -1,4 +1,4 @@
-const query = continent => `
+const query = (continent: string): string => `
   query GetNewsByContinent {
     getNewsByContinent(filter: { continent: "${continent}" }) {
       searchInformation {
