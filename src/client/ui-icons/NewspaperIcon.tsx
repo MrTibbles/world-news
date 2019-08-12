@@ -1,7 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import * as React from "react";
 
-const NewspaperIcon = ({ color = "#000" }) => (
+interface IconProps {
+  color?: string;
+}
+
+const NewspaperIcon: React.SFC<IconProps> = ({
+  color = "#000"
+}): JSX.Element => (
   <span className="newspaper-icon">
     <svg viewBox="0 0 62 62">
       <g fill={color} fillRule="nonzero">
@@ -12,9 +17,5 @@ const NewspaperIcon = ({ color = "#000" }) => (
     </svg>
   </span>
 );
-
-NewspaperIcon.propTypes = {
-  color: PropTypes.string
-};
 
 export default NewspaperIcon;
