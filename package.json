@@ -5,12 +5,12 @@
   "main": "src/server/index.js",
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:js && git add ."
+      "pre-commit": "npm run lint && git add ."
     }
   },
   "scripts": {
     "#COMMENT": "FOR SOME REASON ESLINT IS NOT LIKING NESTED CONFIG FILES... INVESTIGATE WHEN HAVE TIME",
-    "lint:js": "prettier --write \"src/**/*.js\" && eslint --fix \"src/client/*.js\" && eslint --fix \"src/server/*.js\"",
+    "lint": "prettier --write \"src/**/*.?(js|ts|tsx)\" && eslint --fix \"src/client/*.js\" && eslint --fix \"src/server/*.js\"",
     "dev:client": "webpack-dev-server",
     "dev:server": "node src/server/index.js",
     "start:dev": "npm-run-all --parallel dev:*",

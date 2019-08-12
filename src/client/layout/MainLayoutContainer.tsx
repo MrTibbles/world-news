@@ -25,7 +25,7 @@ const Navbar = styled.nav`
 `;
 
 interface MainLayoutContainerProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 const MainLayoutContainer: React.SFC<MainLayoutContainerProps> = props => (
