@@ -27,8 +27,6 @@
   "author": "@mrtibbles",
   "license": "MIT",
   "dependencies": {
-    "@types/react": "^16.8.24",
-    "@types/react-dom": "^16.8.5",
     "apollo-datasource-rest": "^0.6.1",
     "apollo-server": "^2.8.1",
     "graphql": "^14.4.2",
@@ -45,6 +43,9 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
     "@raddad/eslint-config": "0.0.5",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-router-dom": "^4.3.4",
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "awesome-typescript-loader": "^5.2.1",
