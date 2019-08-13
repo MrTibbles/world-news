@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { object } from "prop-types";
 
 interface GraphQLResponse {
-  getNewsByContinent: any
+  getNewsByContinent: any;
 }
 
 interface NetworkState {
@@ -20,7 +19,7 @@ interface NetworkState {
 const useGraphQLAPI = (): [NetworkState, Function] => {
   const [networkState, setNeworkState] = useState({
     data: undefined,
-    error: '',
+    error: "",
     loading: false
   });
 
@@ -29,7 +28,9 @@ const useGraphQLAPI = (): [NetworkState, Function] => {
 
     // Handle GraphQL errors
     if (Array.isArray(error)) {
-      _error = error.map(({ message }: { message: string }): string => message).join(", ");
+      _error = error
+        .map(({ message }: { message: string }): string => message)
+        .join(", ");
     }
 
     setNeworkState({
@@ -40,7 +41,7 @@ const useGraphQLAPI = (): [NetworkState, Function] => {
   };
 
   const submitQuery = async (query: string): Promise<any> => {
-    setNeworkState({ ...networkState, error: '', loading: true });
+    setNeworkState({ ...networkState, error: "", loading: true });
 
     const { data, errors } = await fetch("http://localhost:4000/", {
       body: JSON.stringify({ query }),
@@ -50,11 +51,13 @@ const useGraphQLAPI = (): [NetworkState, Function] => {
       method: "POST"
     })
       .catch((err): Promise<any> => handleErrorResponse(err.message))
-      .then((res): Promise<any> => {
-        if (!res.ok) return handleErrorResponse("Something went wrong");
+      .then(
+        (res): Promise<any> => {
+          if (!res.ok) return handleErrorResponse("Something went wrong");
 
-        return res.json();
-      });
+          return res.json();
+        }
+      );
 
     if (errors) return handleErrorResponse(errors);
 
