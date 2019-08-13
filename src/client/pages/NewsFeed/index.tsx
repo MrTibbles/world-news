@@ -3,13 +3,13 @@ import { RouteComponentProps } from "react-router-dom";
 
 import { useGraphQLAPI } from "../../services";
 import * as Components from "./components";
-import getNewsByContinentQuery from "./queries/getNewsByContinent";
+import { getNewsByContinentQuery, ApiTypes } from "./queries";
 
 const NewsFeed: React.SFC<RouteComponentProps<{ continent: string }>> = ({
   match
 }): JSX.Element => {
   const { continent } = match.params;
-  const [networkState, submitQuery] = useGraphQLAPI();
+  const [networkState, submitQuery] = useGraphQLAPI<ApiTypes.GraphQLResponse>();
 
   const fetchNewsStoriesByContinent = React.useRef((): void => {
     const query = getNewsByContinentQuery(continent);

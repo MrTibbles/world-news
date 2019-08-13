@@ -1,22 +1,16 @@
 import { useState } from "react";
 
-interface GraphQLResponse {
-  getNewsByContinent: any;
-}
-
-interface NetworkState {
-  data?: GraphQLResponse;
-  error?: string;
+interface NetworkState<T> {
+  data?: T;
+  error: string;
   loading: boolean;
 }
 
-/**
- * Shared fetch util
+interface SubmitQueryFn {
+  (query: string): Promise<any>;
+}
 
- * @return {Array} [0]      Network state representation
- *                 [1]      Method for submitting network request
- */
-const useGraphQLAPI = (): [NetworkState, Function] => {
+function useGraphQLAPI<T>(): [NetworkState<T>, SubmitQueryFn] {
   const [networkState, setNeworkState] = useState({
     data: undefined,
     error: "",
@@ -69,6 +63,6 @@ const useGraphQLAPI = (): [NetworkState, Function] => {
   };
 
   return [networkState, submitQuery];
-};
+}
 
 export default useGraphQLAPI;
