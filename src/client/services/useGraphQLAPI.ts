@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { GraphQLResponse } from "../pages/NewsFeed/queries/api-types";
 
 interface NetworkState<T> {
   data?: T;
-  error: string;
+  error?: string;
   loading: boolean;
 }
 
@@ -10,31 +11,33 @@ interface SubmitQueryFn {
   (query: string): Promise<any>;
 }
 
-function useGraphQLAPI<T>(): [NetworkState<T>, SubmitQueryFn] {
-  const [networkState, setNeworkState] = useState({
-    data: undefined,
-    error: "",
+function useGraphQLAPI<GQLResponse>(): [
+  NetworkState<GQLResponse>,
+  SubmitQueryFn
+] {
+  const initialState: NetworkState<GQLResponse> = {
     loading: false
-  });
-
-  const handleErrorResponse = (error: string): any => {
-    let _error = error;
-
-    // Handle GraphQL errors
-    if (Array.isArray(error)) {
-      _error = error
-        .map(({ message }: { message: string }): string => message)
-        .join(", ");
-    }
-
-    setNeworkState({
-      ...networkState,
-      error: _error,
-      loading: false
-    });
   };
 
-  const submitQuery = async (query: string): Promise<any> => {
+  const [networkState, setNeworkState] = useState(initialState);
+
+  function handleErrorResponse(error: string): any {
+    setNeworkState({
+      ...networkState,
+      error,
+      loading: false
+    });
+  }
+
+  function handleSuccessResponse(data: GQLResponse): void {
+    setNeworkState({
+      ...networkState,
+      data,
+      loading: false
+    });
+  }
+
+  async function submitQuery(query: string): Promise<void> {
     setNeworkState({ ...networkState, error: "", loading: true });
 
     const { data, errors } = await fetch("http://localhost:4000/", {
@@ -43,24 +46,23 @@ function useGraphQLAPI<T>(): [NetworkState<T>, SubmitQueryFn] {
         "Content-Type": "application/json"
       },
       method: "POST"
-    })
-      .catch((err): Promise<any> => handleErrorResponse(err.message))
-      .then(
-        (res): Promise<any> => {
-          if (!res.ok) return handleErrorResponse("Something went wrong");
+    }).then(
+      (res): Promise<any> =>
+        res.ok
+          ? (res.json() as Promise<GraphQLResponse>)
+          : handleErrorResponse("Something went wrong")
+    );
 
-          return res.json();
-        }
-      );
+    if (errors) {
+      const _error: string = errors
+        .map(({ message }: { message: string }): string => message)
+        .join(", ");
 
-    if (errors) return handleErrorResponse(errors);
+      return handleErrorResponse(_error);
+    }
 
-    return setNeworkState({
-      ...networkState,
-      data,
-      loading: false
-    });
-  };
+    return handleSuccessResponse(data);
+  }
 
   return [networkState, submitQuery];
 }
