@@ -1,4 +1,4 @@
-export interface SearchInformationFragment {
+export interface SearchInformation {
   formattedSearchTime: number;
   formattedTotalResults: number;
 }
@@ -10,7 +10,7 @@ export interface Item {
 }
 
 export interface GetNewsByContinentResponse {
-  searchInformation: SearchInformationFragment;
+  searchInformation: SearchInformation;
   items: Item[];
 }
 
