@@ -5,7 +5,9 @@ const GoogleNewsAPI = require("./GoogleNewsAPI");
 
 const resolvers = {
   Query: {
-    getNewsByContinent: async (_source, { filter }, { dataSources }) => { return dataSources.googleNewsAPI.getNewsByContinent(filter) }
+    getNewsByContinent: async (_source, { filter }, { dataSources }) => {
+      return dataSources.googleNewsAPI.getNewsByContinent(filter);
+    }
   }
 };
 
