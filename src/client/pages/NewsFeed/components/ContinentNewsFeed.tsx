@@ -8,6 +8,7 @@ import {
   TwitterShareButton,
   TwitterIcon
 } from "react-share";
+import { Item } from "../queries/api-types";
 
 const List = styled.ul`
   list-style: none;
@@ -29,12 +30,6 @@ const ShareButtons = styled.div`
     margin-right: var(--spacing-sml);
   }
 `;
-
-interface Item {
-  title: string;
-  snippet: string;
-  link: string;
-}
 
 interface ContinentNewsFeedProps {
   items: Item[];

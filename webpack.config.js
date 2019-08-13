@@ -8,13 +8,13 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const PATHS = {
   src: path.resolve(__dirname, "src/client"),
   dist: path.resolve(__dirname, "dist")
-}
+};
 
 module.exports = (env = {}) => {
   const isInDev = env.production !== true;
 
   return {
-    entry: path.resolve(PATHS.src, "app.js"),
+    entry: path.resolve(PATHS.src, "App.tsx"),
     mode: isInDev ? "development" : "production",
     devtool: isInDev ? "eval" : "source-map",
     resolve: {
@@ -25,7 +25,7 @@ module.exports = (env = {}) => {
       historyApiFallback: true,
       contentBase: PATHS.dist,
       port: 3000,
-      stats: "errors-warnings",
+      stats: "errors-warnings"
     },
     output: {
       path: PATHS.dist,
@@ -39,7 +39,7 @@ module.exports = (env = {}) => {
           exclude: /node_modules/,
           use: [
             {
-              loader: 'awesome-typescript-loader'
+              loader: "awesome-typescript-loader"
             },
             {
               loader: "linaria/loader",
@@ -47,7 +47,7 @@ module.exports = (env = {}) => {
                 sourceMap: isInDev
               }
             }
-          ],
+          ]
         },
         // addition - add source-map support
         { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
