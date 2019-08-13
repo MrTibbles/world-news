@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { GraphQLResponse } from "../pages/NewsFeed/queries/api-types";
 
 interface NetworkState<T> {
   data?: T;
@@ -49,7 +48,7 @@ function useGraphQLAPI<GQLResponse>(): [
     }).then(
       (res): Promise<any> =>
         res.ok
-          ? (res.json() as Promise<GraphQLResponse>)
+          ? (res.json() as Promise<GQLResponse>)
           : handleErrorResponse("Something went wrong")
     );
 
