@@ -7,37 +7,32 @@ interface NetworkState<T> {
 }
 
 interface SubmitQueryFn {
-  (query: string): Promise<any>;
+  (query: string): Promise<void>;
 }
 
-function useGraphQLAPI<GQLResponse>(): [
-  NetworkState<GQLResponse>,
-  SubmitQueryFn
-] {
-  const initialState: NetworkState<GQLResponse> = {
+function useGraphQLAPI<T>(): [NetworkState<T>, SubmitQueryFn] {
+  const initialState: NetworkState<T> = {
     loading: false
   };
 
   const [networkState, setNeworkState] = useState(initialState);
 
-  function handleErrorResponse(error: string): any {
+  function handleErrorResponse(error: string): void {
     setNeworkState({
-      ...networkState,
-      error,
-      loading: false
+      ...initialState,
+      error
     });
   }
 
-  function handleSuccessResponse(data: GQLResponse): void {
+  function handleSuccessResponse(data: T): void {
     setNeworkState({
-      ...networkState,
-      data,
-      loading: false
+      ...initialState,
+      data
     });
   }
 
   async function submitQuery(query: string): Promise<void> {
-    setNeworkState({ ...networkState, error: "", loading: true });
+    setNeworkState(state => ({ ...state, error: "", loading: true }));
 
     const { data, errors } = await fetch("http://localhost:4000/", {
       body: JSON.stringify({ query }),
@@ -45,11 +40,10 @@ function useGraphQLAPI<GQLResponse>(): [
         "Content-Type": "application/json"
       },
       method: "POST"
-    }).then(
-      (res): Promise<any> =>
-        res.ok
-          ? (res.json() as Promise<GQLResponse>)
-          : handleErrorResponse("Something went wrong")
+    }).then((res): void | Promise<any> =>
+      res.ok
+        ? (res.json() as Promise<T>)
+        : handleErrorResponse("Something went wrong")
     );
 
     if (errors) {

@@ -8,7 +8,7 @@ import {
   TwitterShareButton,
   TwitterIcon
 } from "react-share";
-import { Item } from "../queries/api-types";
+import { Item } from "../types";
 
 const List = styled.ul`
   list-style: none;
