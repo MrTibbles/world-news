@@ -16,7 +16,7 @@ const Container = styled.div`
   }
 `;
 
-const Loading: React.SFC<{}> = (): JSX.Element => (
+const Loading: React.FunctionComponent<{}> = (): JSX.Element => (
   <Container>
     <NewspaperIcon />
     <h2>Loading...</h2>

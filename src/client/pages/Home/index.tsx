@@ -2,7 +2,9 @@ import * as React from "react";
 import { RouteComponentProps } from "react-router-dom";
 import * as Components from "./components";
 
-const HomePage: React.SFC<RouteComponentProps> = ({ history }): JSX.Element => {
+const HomePage: React.FunctionComponent<RouteComponentProps> = ({
+  history
+}): JSX.Element => {
   const onContinentSelected = React.useRef((continent: string): void => {
     history.push(`/news-feed/${continent}`);
   });

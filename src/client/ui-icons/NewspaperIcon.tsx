@@ -4,7 +4,7 @@ interface IconProps {
   color?: string;
 }
 
-const NewspaperIcon: React.SFC<IconProps> = ({
+const NewspaperIcon: React.FunctionComponent<IconProps> = ({
   color = "#000"
 }): JSX.Element => (
   <span className="newspaper-icon">

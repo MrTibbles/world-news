@@ -28,7 +28,7 @@ interface MainLayoutContainerProps {
   children: React.ReactNode;
 }
 
-const MainLayoutContainer: React.SFC<MainLayoutContainerProps> = (
+const MainLayoutContainer: React.FunctionComponent<MainLayoutContainerProps> = (
   props
 ): JSX.Element => (
   <React.Fragment>
