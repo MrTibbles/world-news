@@ -9,11 +9,11 @@ const Container = styled.div`
 `;
 
 interface SearchInformationProps {
-  searchTime: number,
-  totalResults: number,
+  searchTime: number;
+  totalResults: number;
 }
 
-const SearchInformation: React.SFC<SearchInformationProps> = ({
+const SearchInformation: React.FunctionComponent<SearchInformationProps> = ({
   searchTime,
   totalResults
 }): JSX.Element => (

@@ -19,7 +19,7 @@ interface WorldMapProps {
   onContinentSelected: Function;
 }
 
-const WorldMap: React.SFC<WorldMapProps> = ({
+const WorldMap: React.FunctionComponent<WorldMapProps> = ({
   onContinentSelected
 }): JSX.Element => (
   <SVG viewBox="0 0 468 239">

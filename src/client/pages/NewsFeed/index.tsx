@@ -10,9 +10,9 @@ interface NewsFeedRouteProps {
   continent: string;
 }
 
-const NewsFeed: React.SFC<RouteComponentProps<NewsFeedRouteProps>> = ({
-  match
-}): JSX.Element => {
+const NewsFeed: React.FunctionComponent<
+  RouteComponentProps<NewsFeedRouteProps>
+> = ({ match }): JSX.Element => {
   const { continent } = match.params;
   const [networkState, submitQuery] = useGraphQLAPI<GraphQLResponse>();
 

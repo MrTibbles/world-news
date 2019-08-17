@@ -35,7 +35,7 @@ interface ContinentNewsFeedProps {
   items: Item[];
 }
 
-const ContinentNewsFeed: React.SFC<ContinentNewsFeedProps> = ({
+const ContinentNewsFeed: React.FunctionComponent<ContinentNewsFeedProps> = ({
   items
 }): JSX.Element => (
   <List>
