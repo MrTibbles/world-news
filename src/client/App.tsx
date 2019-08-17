@@ -8,7 +8,7 @@ import "./styles/base.css";
 import { MainLayoutContainer } from "./layout";
 import * as Pages from "./pages";
 
-const App: React.FunctionComponent<{}> = (): JSX.Element => (
+const App: React.FunctionComponent = (): JSX.Element => (
   <Router>
     <MainLayoutContainer>
       <Switch>
